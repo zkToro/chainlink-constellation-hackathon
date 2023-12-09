@@ -6,7 +6,13 @@ Welcome to the repository for our Chainlink Constellation Hackathon Project! Thi
 
 ## Project Description
 
-Provide a brief description of your project, including its purpose, main features, and any key technologies used.
+zkToro is a DeFi protocol that provides the critical infrastructure to create, share and execute investable crypto quant trading strategies cross-chain - all whilst preserving the IP of the expert strategies private off and on-chain.
+
+“Success spreads, secrets stay”
+
+## High-level Architecture
+
+![zkToro-architecture](./zktoro-architecture.png)
 
 ## Demo
 
@@ -14,15 +20,25 @@ Include a link or embed a demo video showcasing your project in action. Screensh
 
 ## Features
 
-List the main features of your project. Highlight what makes your project unique and valuable.
+List the main features of zkToro project:
 
-- Feature 1: Description
-- Feature 2: Description
-- ...
+- User create strategies with drap & drop UX: Users can create quant trading strategies with an easy UX, made with Next.js.
+- Executable strategies: Strategies will be parsed to code in order to be executed by our L3.
+- Strategy verification: Strategies signals are verified with Zk proofs.
+- Dockerized strategies: Strategies are dockerized and executed in the backend.
+- Automated swaps and cross-chain operations: Desired swaps will take place in UniSwap and tokens will be bridged between chains.
 
 ## Technologies Used
 
-- List the key technologies, frameworks, and libraries used in your project.
+- Chainlink CCIP
+- Tencent Cloud Infraestructe
+- Account Abstraction
+- Circom (Zk Proofs)
+- Next.js
+- Javascript
+- Typescript
+- Docker
+- Go
 
 ## Getting Started
 
@@ -32,14 +48,29 @@ Specify any software, tools, or dependencies that need to be installed before ru
 
 ### Installation
 
-Provide step-by-step instructions on how to install and set up your project.
+In order to start the backend:
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/chainlink-constellation.git
+## Download desired certificate to run backend
 
-# Navigate to the project directory
-cd chainlink-constellation
+# Login to server
+chmod 400 zktoro.pem
+ssh -i zktoro.pem ubuntu@43.156.147.65
 
-# Install dependencies
-npm install
+#Whenever login, first
+source ~/.profile
+
+# Run backend node server
+cd ~/zktoro_node_endpoint
+ts-node index.ts
+
+# fetch image and run 
+cd ~/pull_and_exec
+```
+In order to start the backend:
+
+```bash
+# Commands to run frontend server (Leo)
+```
+
+
