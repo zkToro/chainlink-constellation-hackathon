@@ -1,0 +1,15 @@
+[submodule "zkToro-docker-automation"]
+	path = zkToro-docker-automation
+	url = git@github.com:zkToro/zkToro-docker-automation.git
+[submodule "zkToro-circuit"]
+	path = zkToro-circuit
+	url = git@github.com:zkToro/circuit.git
+[submodule "zkToro-ccip-chainlink-backend"]
+	path = zkToro-ccip-chainlink-backend
+	url = git@github.com:zkToro/ccip_chainlink_backend.git
+[submodule "zkToro-ui"]
+	path = zkToro-ui
+	url = https://github.com/zkToro/zktoro-ui
+[submodule "zkToro-account-abstraction"]
+	path = zkToro-account-abstraction
+	url = git@github.com:zkToro/account_abstraction.git
